@@ -1,0 +1,17 @@
+# macOS
+.DS_Store
+
+# Android/Gradle
+**/.gradle/
+**/build/
+**/local.properties
+**/.idea/
+
+# VS Code
+.vscode/
+
+# Logs
+*.log
+
+# Archives
+*.zip
