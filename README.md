@@ -10,7 +10,8 @@ Acest repository contine implementarea pentru laboratoarele de Computer Graphics
 1. Laborator 1 - HelloWorld OpenGL ES
 2. Laborator 2 - BouncySquare (randare 2D)
 3. Laborator 3 - BouncyCube (randare 3D)
-4. Introducere Android Studio - TextView + Button + schimbare culoare + Toast
+4. Laborator 4 - Lights pe BouncyCube (normale + lighting + materials)
+5. Introducere Android Studio - TextView + Button + schimbare culoare + Toast
 
 ## Cum se ruleaza proiectele
 1. Deschide in Android Studio unul dintre proiectele din `android_projects_snapshot/`.
@@ -23,6 +24,7 @@ Acest repository contine implementarea pentru laboratoarele de Computer Graphics
 - Lab 1: aplicatia deseneaza fundalul cu culoarea setata in renderer.
 - Lab 2: patratul este afisat si are miscare verticala.
 - Lab 3: cubul este afisat, se misca si se roteste.
+- Lab 4: cubul foloseste iluminare OpenGL ES (diffuse/specular/ambient) si normale.
 - Intro Android: butonul schimba culoarea textului si afiseaza mesaj Toast.
 
 ## Observatii
