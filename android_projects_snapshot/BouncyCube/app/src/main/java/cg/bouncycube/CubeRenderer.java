@@ -8,6 +8,8 @@ import javax.microedition.khronos.egl.EGLConfig;
 import javax.microedition.khronos.opengles.GL10;
 
 import android.opengl.GLSurfaceView;
+import android.content.Context;
+import cg.bouncycube.R;
 
 public class CubeRenderer implements GLSurfaceView.Renderer {
     public static final int SS_SUNLIGHT = GL10.GL_LIGHT0;
@@ -15,8 +17,10 @@ public class CubeRenderer implements GLSurfaceView.Renderer {
     private Cube mCube;
     private float mTransY;
     private float mAngle;
+    private Context context;
 
-    public CubeRenderer() {
+    public CubeRenderer(Context context) {
+        this.context = context;
         mCube = new Cube();
     }
 
@@ -66,6 +70,10 @@ public class CubeRenderer implements GLSurfaceView.Renderer {
         gl.glShadeModel(GL10.GL_SMOOTH);
         gl.glEnable(GL10.GL_DEPTH_TEST);
         initLighting(gl);
+        // create and bind texture for cube
+        if (this.context != null) {
+            mCube.createTexture(gl, this.context, R.drawable.black_stone);
+        }
     }
 
     protected static FloatBuffer makeFloatBuffer(float[] array) {
@@ -83,8 +91,9 @@ public class CubeRenderer implements GLSurfaceView.Renderer {
         float[] specularLight = {1.0f, 1.0f, 1.0f, 1.0f};
         float[] position = {6.0f, 5.0f, 8.0f, 1.0f};
 
-        float[] diffuseMaterial = {0.0f, 1.0f, 0.0f, 1.0f};
-        float[] ambientMaterial = {0.1f, 0.35f, 0.1f, 1.0f};
+        // bright beige diffuse material to match rocky texture
+        float[] diffuseMaterial = {0.96f, 0.87f, 0.70f, 1.0f};
+        float[] ambientMaterial = {0.18f, 0.16f, 0.14f, 1.0f};
         float[] specularMaterial = {1.0f, 1.0f, 1.0f, 1.0f};
         float[] globalAmbient = {0.1f, 0.1f, 0.1f, 1.0f};
         float[] spotDirection = {-0.6f, -0.5f, -0.8f};

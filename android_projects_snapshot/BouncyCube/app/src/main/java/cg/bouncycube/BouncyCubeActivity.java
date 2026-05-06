@@ -16,7 +16,7 @@ public class BouncyCubeActivity extends Activity {
         );
 
         GLSurfaceView view = new GLSurfaceView(this);
-        view.setRenderer(new CubeRenderer());
+        view.setRenderer(new CubeRenderer(this.getApplicationContext()));
         setContentView(view);
     }
 }
