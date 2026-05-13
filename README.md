@@ -11,7 +11,9 @@ Acest repository contine implementarea pentru laboratoarele de Computer Graphics
 2. Laborator 2 - BouncySquare (randare 2D)
 3. Laborator 3 - BouncyCube (randare 3D)
 4. Laborator 4 - Lights pe BouncyCube (normale + lighting + materials)
-5. Introducere Android Studio - TextView + Button + schimbare culoare + Toast
+5. Laborator 5 - BouncySquare texturat
+6. Laborator 6 - Blending si multitexturing pe BouncySquare
+7. Introducere Android Studio - TextView + Button + schimbare culoare + Toast
 
 ## Cum se ruleaza proiectele
 1. Deschide in Android Studio unul dintre proiectele din `android_projects_snapshot/`.
@@ -25,6 +27,8 @@ Acest repository contine implementarea pentru laboratoarele de Computer Graphics
 - Lab 2: patratul este afisat si are miscare verticala.
 - Lab 3: cubul este afisat, se misca si se roteste.
 - Lab 4: cubul foloseste iluminare OpenGL ES (diffuse/specular/ambient) si normale.
+- Lab 5: square-ul afiseaza textura si se misca vertical.
+- Lab 6: square-ul trece prin blending color, blending pe texturi si multitexturing.
 - Intro Android: butonul schimba culoarea textului si afiseaza mesaj Toast.
 
 ## Observatii

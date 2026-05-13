@@ -96,9 +96,6 @@ public class Square {
         gl.glTexCoordPointer(2, GL10.GL_FLOAT, 0, mTextureBuffer);
         gl.glEnableClientState(GL10.GL_TEXTURE_COORD_ARRAY);
 
-        gl11.glActiveTexture(GL11.GL_TEXTURE0);
-        gl11.glTexEnvf(GL10.GL_TEXTURE_ENV, GL10.GL_TEXTURE_ENV_MODE, GL10.GL_MODULATE);
-        gl11.glActiveTexture(GL11.GL_TEXTURE1);
         gl11.glTexEnvf(GL10.GL_TEXTURE_ENV, GL10.GL_TEXTURE_ENV_MODE, GL10.GL_MODULATE);
 
         gl.glFrontFace(GL11.GL_CW);

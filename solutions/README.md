@@ -5,6 +5,8 @@
 - `lab2/` - BouncySquare (2D rendering)
 - `lab3/` - BouncyCube (3D rendering)
 - `lab4/` - BouncyCube Lighting (OpenGL ES 1.x lights + materials)
+- `lab5/` - BouncySquare Textures (OpenGL ES 1.x texture mapping)
+- `lab6/` - BouncySquare Blending (alpha blending + multitexturing)
 - `intro_android/` - Introducere Android Studio (TextView + Button)
 
 ## Acoperire cerinte PDF
@@ -28,7 +30,18 @@
 - Include atenuare liniara si parametri spotlight pentru experimentele de lighting.
 - README-ul laboratorului contine checklist-ul de experimente cerut in assignment.
 
-5. `Introducere în Android Studio.pdf`
+5. `CG_Laboratory_5_unlocked.pdf.pdf`
+- Implementat `Square`, `SquareRenderer`, `BouncySquareActivity`.
+- Include texture mapping folosind `hedly.png` si miscarea verticala a square-ului.
+- README-ul laboratorului contine checklist-ul de experimente cerut in assignment.
+
+6. `CG_Laboratory_6_unlocked.pdf.pdf`
+- Implementat blending intre doua square-uri colorate.
+- Implementat blending pe texturi cu doua resurse si blend additive.
+- Implementat multitexturing cu doua texture units si `GL_MODULATE`.
+- README-ul laboratorului contine checklist-ul de experimente cerut in assignment.
+
+7. `Introducere în Android Studio.pdf`
 - Implementat `MainActivity` + `activity_main.xml` conform ex1 si ex2.
 - Butonul schimba culoarea textului si afiseaza Toast.
 
